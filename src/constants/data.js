@@ -1,0 +1,285 @@
+// Mock data for the entire Islam Learning Platform application
+
+export const SCHOLARS = [
+  { id: '1', name: 'Mufti Menk', image: 'https://picsum.photos/seed/scholar1/200/200', lectures: 245 },
+  { id: '2', name: 'Nouman Ali Khan', image: 'https://picsum.photos/seed/scholar2/200/200', lectures: 189 },
+  { id: '3', name: 'Omar Suleiman', image: 'https://picsum.photos/seed/scholar3/200/200', lectures: 156 },
+  { id: '4', name: 'Yasir Qadhi', image: 'https://picsum.photos/seed/scholar4/200/200', lectures: 312 },
+  { id: '5', name: 'Tariq Jameel', image: 'https://picsum.photos/seed/scholar5/200/200', lectures: 420 },
+  { id: '6', name: 'Zakir Naik', image: 'https://picsum.photos/seed/scholar6/200/200', lectures: 198 },
+];
+
+export const TOPICS = [
+  { id: '1', name: 'Quran Tafsir', icon: 'book-open-variant', color: '#00C896' },
+  { id: '2', name: 'Hadith', icon: 'book-multiple', color: '#D4A044' },
+  { id: '3', name: 'Seerah', icon: 'account-heart', color: '#6C63FF' },
+  { id: '4', name: 'Fiqh', icon: 'scale-balance', color: '#FF6B8A' },
+  { id: '5', name: 'Aqeedah', icon: 'shield-star', color: '#00D4FF' },
+  { id: '6', name: 'Islamic History', icon: 'history', color: '#FFB347' },
+  { id: '7', name: 'Family & Marriage', icon: 'home-heart', color: '#FF6B8A' },
+  { id: '8', name: 'Youth', icon: 'account-group', color: '#6C63FF' },
+  { id: '9', name: 'Purification of Soul', icon: 'heart', color: '#00C896' },
+  { id: '10', name: 'Daily Reminders', icon: 'bell', color: '#D4A044' },
+];
+
+export const LECTURES = [
+  {
+    id: '1',
+    title: 'The Power of Dua',
+    scholar: 'Mufti Menk',
+    scholarId: '1',
+    topic: 'Purification of Soul',
+    topicId: '9',
+    thumbnail: 'https://picsum.photos/seed/lec1/400/225',
+    duration: '45:30',
+    views: '1.2M',
+    rating: 4.8,
+    description: 'Learn about the importance and power of making dua in Islam.',
+    isNew: true,
+    isTrending: true,
+  },
+  {
+    id: '2',
+    title: 'Stories of the Prophets',
+    scholar: 'Nouman Ali Khan',
+    scholarId: '2',
+    topic: 'Seerah',
+    topicId: '3',
+    thumbnail: 'https://picsum.photos/seed/lec2/400/225',
+    duration: '1:02:15',
+    views: '890K',
+    rating: 4.9,
+    description: 'A beautiful narration of the stories of Prophets mentioned in the Quran.',
+    isNew: true,
+    isTrending: true,
+  },
+  {
+    id: '3',
+    title: 'Understanding Surah Al-Kahf',
+    scholar: 'Yasir Qadhi',
+    scholarId: '4',
+    topic: 'Quran Tafsir',
+    topicId: '1',
+    thumbnail: 'https://picsum.photos/seed/lec3/400/225',
+    duration: '55:00',
+    views: '650K',
+    rating: 4.7,
+    description: 'Deep dive into the meanings and lessons of Surah Al-Kahf.',
+    isNew: false,
+    isTrending: true,
+  },
+  {
+    id: '4',
+    title: 'Marriage in Islam',
+    scholar: 'Omar Suleiman',
+    scholarId: '3',
+    topic: 'Family & Marriage',
+    topicId: '7',
+    thumbnail: 'https://picsum.photos/seed/lec4/400/225',
+    duration: '38:45',
+    views: '1.5M',
+    rating: 4.9,
+    description: 'Understanding the beautiful institution of marriage in Islam.',
+    isNew: false,
+    isTrending: false,
+  },
+  {
+    id: '5',
+    title: 'The Last Sermon',
+    scholar: 'Tariq Jameel',
+    scholarId: '5',
+    topic: 'Seerah',
+    topicId: '3',
+    thumbnail: 'https://picsum.photos/seed/lec5/400/225',
+    duration: '1:15:00',
+    views: '2.1M',
+    rating: 5.0,
+    description: 'An emotional narration of the last sermon of Prophet Muhammad (PBUH).',
+    isNew: true,
+    isTrending: true,
+  },
+  {
+    id: '6',
+    title: 'Basics of Fiqh',
+    scholar: 'Zakir Naik',
+    scholarId: '6',
+    topic: 'Fiqh',
+    topicId: '4',
+    thumbnail: 'https://picsum.photos/seed/lec6/400/225',
+    duration: '42:20',
+    views: '780K',
+    rating: 4.6,
+    description: 'Introduction to Islamic jurisprudence and its principles.',
+    isNew: false,
+    isTrending: false,
+  },
+  {
+    id: '7',
+    title: 'Patience in Trials',
+    scholar: 'Mufti Menk',
+    scholarId: '1',
+    topic: 'Purification of Soul',
+    topicId: '9',
+    thumbnail: 'https://picsum.photos/seed/lec7/400/225',
+    duration: '35:10',
+    views: '920K',
+    rating: 4.8,
+    description: 'How to remain patient during the trials and tribulations of life.',
+    isNew: true,
+    isTrending: false,
+  },
+  {
+    id: '8',
+    title: 'Youth & Social Media',
+    scholar: 'Nouman Ali Khan',
+    scholarId: '2',
+    topic: 'Youth',
+    topicId: '8',
+    thumbnail: 'https://picsum.photos/seed/lec8/400/225',
+    duration: '48:55',
+    views: '1.8M',
+    rating: 4.7,
+    description: 'Navigating social media as a Muslim youth in the modern world.',
+    isNew: false,
+    isTrending: true,
+  },
+  {
+    id: '9',
+    title: 'The Battle of Badr',
+    scholar: 'Yasir Qadhi',
+    scholarId: '4',
+    topic: 'Islamic History',
+    topicId: '6',
+    thumbnail: 'https://picsum.photos/seed/lec9/400/225',
+    duration: '1:20:00',
+    views: '560K',
+    rating: 4.9,
+    description: 'Detailed account of the first major battle in Islamic history.',
+    isNew: false,
+    isTrending: false,
+  },
+  {
+    id: '10',
+    title: 'Daily Adhkar',
+    scholar: 'Omar Suleiman',
+    scholarId: '3',
+    topic: 'Daily Reminders',
+    topicId: '10',
+    thumbnail: 'https://picsum.photos/seed/lec10/400/225',
+    duration: '25:30',
+    views: '2.5M',
+    rating: 4.8,
+    description: 'Essential daily remembrances every Muslim should practice.',
+    isNew: true,
+    isTrending: true,
+  },
+];
+
+export const BOOKS = [
+  { id: '1', title: 'Riyad as-Salihin', author: 'Imam Nawawi', cover: 'https://picsum.photos/seed/book1/200/300', pages: 680, rating: 4.9 },
+  { id: '2', title: 'The Sealed Nectar', author: 'Safiur Rahman', cover: 'https://picsum.photos/seed/book2/200/300', pages: 480, rating: 4.8 },
+  { id: '3', title: 'Fortress of the Muslim', author: 'Saeed Al-Qahtani', cover: 'https://picsum.photos/seed/book3/200/300', pages: 256, rating: 4.9 },
+  { id: '4', title: 'Stories of the Prophets', author: 'Ibn Kathir', cover: 'https://picsum.photos/seed/book4/200/300', pages: 520, rating: 4.7 },
+  { id: '5', title: 'Purification of the Heart', author: 'Hamza Yusuf', cover: 'https://picsum.photos/seed/book5/200/300', pages: 230, rating: 4.8 },
+  { id: '6', title: 'In the Footsteps of the Prophet', author: 'Tariq Ramadan', cover: 'https://picsum.photos/seed/book6/200/300', pages: 310, rating: 4.6 },
+];
+
+export const AUDIOBOOKS = [
+  { id: '1', title: 'Lives of the Sahaba', narrator: 'Omar Suleiman', cover: 'https://picsum.photos/seed/audio1/200/200', duration: '12h 30m', rating: 4.9 },
+  { id: '2', title: 'Quran Translation', narrator: 'Mishary Rashid', cover: 'https://picsum.photos/seed/audio2/200/200', duration: '60h 15m', rating: 5.0 },
+  { id: '3', title: 'Seerah of the Prophet', narrator: 'Yasir Qadhi', cover: 'https://picsum.photos/seed/audio3/200/200', duration: '45h 00m', rating: 4.8 },
+  { id: '4', title: '40 Hadith Nawawi', narrator: 'Mufti Menk', cover: 'https://picsum.photos/seed/audio4/200/200', duration: '8h 45m', rating: 4.7 },
+];
+
+export const MOODS = [
+  { id: '1', name: 'Peaceful', emoji: '\u2615', color: '#00C896', gradient: ['#00C896', '#00A67E'] },
+  { id: '2', name: 'Motivated', emoji: '\uD83D\uDD25', color: '#FF6B8A', gradient: ['#FF6B8A', '#FF4757'] },
+  { id: '3', name: 'Grateful', emoji: '\uD83D\uDE4F', color: '#D4A044', gradient: ['#F0C56D', '#D4A044'] },
+  { id: '4', name: 'Seeking Knowledge', emoji: '\uD83D\uDCDA', color: '#6C63FF', gradient: ['#6C63FF', '#5A52E0'] },
+  { id: '5', name: 'Reflective', emoji: '\uD83C\uDF19', color: '#00D4FF', gradient: ['#00D4FF', '#0099CC'] },
+  { id: '6', name: 'Anxious', emoji: '\uD83E\uDD32', color: '#FFB347', gradient: ['#FFB347', '#FF9A23'] },
+];
+
+export const ONBOARDING_PROFESSIONS = [
+  'Student', 'Teacher', 'Doctor', 'Engineer', 'Business Owner',
+  'Homemaker', 'Scholar', 'Artist', 'Lawyer', 'Other',
+];
+
+export const ONBOARDING_FAMILY_ROLES = [
+  'Father', 'Mother', 'Son', 'Daughter', 'Husband', 'Wife',
+  'Single', 'Guardian', 'Grandparent',
+];
+
+export const ONBOARDING_FIELDS = [
+  'Islamic Studies', 'Science & Technology', 'Medicine', 'Business & Finance',
+  'Arts & Literature', 'Education', 'Law', 'Social Sciences', 'Engineering', 'Other',
+];
+
+export const ONBOARDING_INTERESTS = [
+  'Quran Tafsir', 'Hadith Studies', 'Seerah', 'Islamic History',
+  'Fiqh & Jurisprudence', 'Family & Relationships', 'Youth Issues',
+  'Spiritual Growth', 'Daily Reminders', 'Comparative Religion',
+  'Islamic Finance', 'Parenting in Islam',
+];
+
+export const ONBOARDING_CHALLENGES = [
+  'Staying consistent in prayers', 'Understanding the Quran',
+  'Managing stress & anxiety', 'Raising children Islamically',
+  'Strengthening faith', 'Finding good company',
+  'Balancing deen & dunya', 'Dealing with doubts',
+  'Improving character', 'Time management',
+];
+
+export const KIDS_CATEGORIES = [
+  { id: '1', name: 'Prophets Stories', icon: 'star', color: '#FFB347' },
+  { id: '2', name: 'Quran for Kids', icon: 'book', color: '#00C896' },
+  { id: '3', name: 'Nasheeds', icon: 'musical-notes', color: '#6C63FF' },
+  { id: '4', name: 'Good Manners', icon: 'heart', color: '#FF6B8A' },
+  { id: '5', name: 'Dua & Prayers', icon: 'hands-pray', color: '#00D4FF' },
+  { id: '6', name: 'Arabic Alphabet', icon: 'alphabetical', color: '#D4A044' },
+];
+
+export const KIDS_CONTENT = {
+  '1': [ // Prophets Stories
+    { id: 'k1', title: 'Prophet Muhammad - Part 1', categoryId: '1', thumbnail: 'https://picsum.photos/seed/kids1/400/225', duration: '12:30', description: 'Learn about the early life of Prophet Muhammad (PBUH)', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k2', title: 'Prophet Ibrahim (Abraham)', categoryId: '1', thumbnail: 'https://picsum.photos/seed/kids2/400/225', duration: '10:45', description: 'The inspiring story of Prophet Ibrahim and his unwavering faith', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k3', title: 'Prophet Musa (Moses)', categoryId: '1', thumbnail: 'https://picsum.photos/seed/kids3/400/225', duration: '14:20', description: 'The miraculous story of Prophet Musa and Pharaoh', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k4', title: 'Prophet Yusuf (Joseph)', categoryId: '1', thumbnail: 'https://picsum.photos/seed/kids4/400/225', duration: '16:10', description: 'A beautiful story of patience, trust, and forgiveness', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k5', title: 'Prophet Nuh (Noah)', categoryId: '1', thumbnail: 'https://picsum.photos/seed/kids5/400/225', duration: '11:50', description: 'The first messenger and his 950 years of preaching', youtubeId: 'dQw4w9WgXcQ' },
+  ],
+  '2': [ // Quran for Kids
+    { id: 'k6', title: 'Surah Al-Fatiha (The Opening)', categoryId: '2', thumbnail: 'https://picsum.photos/seed/kids6/400/225', duration: '8:30', description: 'Learn the most important chapter of the Quran', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k7', title: 'Surah Al-Ikhlas (Sincerity)', categoryId: '2', thumbnail: 'https://picsum.photos/seed/kids7/400/225', duration: '6:15', description: 'Understanding Tawheed through this beautiful short chapter', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k8', title: 'Surah Al-Fil (The Elephant)', categoryId: '2', thumbnail: 'https://picsum.photos/seed/kids8/400/225', duration: '5:40', description: 'The miraculous story of the Elephant and birds', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k9', title: 'Surah Al-Kahf (The Cave) - Stories', categoryId: '2', thumbnail: 'https://picsum.photos/seed/kids9/400/225', duration: '18:20', description: 'Four amazing stories from Surah Al-Kahf', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k10', title: 'Juz Amma - Easy Surahs', categoryId: '2', thumbnail: 'https://picsum.photos/seed/kids10/400/225', duration: '25:45', description: 'Learn the last chapter of the Quran with short surahs', youtubeId: 'dQw4w9WgXcQ' },
+  ],
+  '3': [ // Nasheeds
+    { id: 'k11', title: 'Tala Al-Badru Alayna', categoryId: '3', thumbnail: 'https://picsum.photos/seed/kids11/400/225', duration: '4:20', description: 'The famous welcome song for the Prophet', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k12', title: 'Maher Zain - Inshallah', categoryId: '3', thumbnail: 'https://picsum.photos/seed/kids12/400/225', duration: '3:45', description: 'A beautiful modern Islamic nasheed for kids', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k13', title: 'Children\'s Islamic Songs Collection', categoryId: '3', thumbnail: 'https://picsum.photos/seed/kids13/400/225', duration: '15:30', description: 'Fun and educational Islamic songs for children', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k14', title: 'Subhanallah - Kids Version', categoryId: '3', thumbnail: 'https://picsum.photos/seed/kids14/400/225', duration: '3:10', description: 'Learn to praise Allah with this catchy song', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k15', title: 'Rainbow - Islamic Values Nasheed', categoryId: '3', thumbnail: 'https://picsum.photos/seed/kids15/400/225', duration: '4:55', description: 'Teaching Islamic values through music', youtubeId: 'dQw4w9WgXcQ' },
+  ],
+  '4': [ // Good Manners
+    { id: 'k16', title: 'Respect Your Parents', categoryId: '4', thumbnail: 'https://picsum.photos/seed/kids16/400/225', duration: '9:20', description: 'Why being kind to parents is so important', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k17', title: 'Honesty is the Best Policy', categoryId: '4', thumbnail: 'https://picsum.photos/seed/kids17/400/225', duration: '8:45', description: 'Teaching children the importance of telling the truth', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k18', title: 'Sharing and Kindness', categoryId: '4', thumbnail: 'https://picsum.photos/seed/kids18/400/225', duration: '7:30', description: 'How to be kind and helpful to friends and family', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k19', title: 'Islamic Etiquette for Kids', categoryId: '4', thumbnail: 'https://picsum.photos/seed/kids19/400/225', duration: '11:15', description: 'Learning proper Islamic manners and etiquette', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k20', title: 'Saying Sorry and Forgiveness', categoryId: '4', thumbnail: 'https://picsum.photos/seed/kids20/400/225', duration: '6:50', description: 'Understanding forgiveness and making amends', youtubeId: 'dQw4w9WgXcQ' },
+  ],
+  '5': [ // Dua & Prayers
+    { id: 'k21', title: 'Dua Before Sleeping', categoryId: '5', thumbnail: 'https://picsum.photos/seed/kids21/400/225', duration: '5:20', description: 'Learn the dua to recite before going to bed', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k22', title: 'Dua After Waking Up', categoryId: '5', thumbnail: 'https://picsum.photos/seed/kids22/400/225', duration: '4:45', description: 'Beautiful morning duas for kids', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k23', title: 'Mealtime Duas', categoryId: '5', thumbnail: 'https://picsum.photos/seed/kids23/400/225', duration: '6:10', description: 'Duas to say before and after eating', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k24', title: 'Kids Prayer Guide (Salah)', categoryId: '5', thumbnail: 'https://picsum.photos/seed/kids24/400/225', duration: '13:40', description: 'Step-by-step guide to performing prayer correctly', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k25', title: 'Dua for Protection', categoryId: '5', thumbnail: 'https://picsum.photos/seed/kids25/400/225', duration: '7:25', description: 'Important duas for seeking Allah\'s protection', youtubeId: 'dQw4w9WgXcQ' },
+  ],
+  '6': [ // Arabic Alphabet
+    { id: 'k26', title: 'Arabic Alphabet - Part 1', categoryId: '6', thumbnail: 'https://picsum.photos/seed/kids26/400/225', duration: '10:30', description: 'Learn the first 14 letters of the Arabic alphabet', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k27', title: 'Arabic Alphabet - Part 2', categoryId: '6', thumbnail: 'https://picsum.photos/seed/kids27/400/225', duration: '11:15', description: 'Learn the remaining letters and their sounds', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k28', title: 'Arabic Vowels (Harakat)', categoryId: '6', thumbnail: 'https://picsum.photos/seed/kids28/400/225', duration: '8:45', description: 'Understanding Arabic diacritical marks', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k29', title: 'Simple Arabic Words', categoryId: '6', thumbnail: 'https://picsum.photos/seed/kids29/400/225', duration: '12:20', description: 'Learn 50 basic Arabic words with pronunciation', youtubeId: 'dQw4w9WgXcQ' },
+    { id: 'k30', title: 'Islamic Arabic Phrases', categoryId: '6', thumbnail: 'https://picsum.photos/seed/kids30/400/225', duration: '9:50', description: 'Essential Islamic phrases in Arabic for kids', youtubeId: 'dQw4w9WgXcQ' },
+  ],
+};

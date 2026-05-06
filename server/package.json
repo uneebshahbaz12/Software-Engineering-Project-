@@ -1,0 +1,28 @@
+{
+  "name": "islam-learning-platform-server",
+  "version": "1.0.0",
+  "description": "Islam Learning Platform - Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/utils/seedData.js",
+    "sync-playlist": "node src/utils/syncPlaylistOnce.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.100.1",
+    "axios": "^1.7.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "joi": "^17.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^8.0.7",
+    "socket.io": "^4.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
